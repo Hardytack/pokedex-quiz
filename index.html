@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="./categories.js" defer></script>
+    <script src="./pokemon.js" defer></script>
+    <script src="./main.js" defer></script>
+    <link rel='stylesheet' type='text/css' href='./style.css'>
+</head>
+
+<body>
+    <div id='app'>
+        <section id='loadScreen' v-bind:class='{hideHelper: !loading}'>
+            <form @submit.prevent=' setGame'>
+                <label>How many Players?</label>
+                <label>1</label>
+                <input type='radio' name='playerCount' value='1'>
+                <label>2</label>
+                <input type='radio' name='playerCount' value='2'>
+                <button>Start Game</button>
+            </form>
+        </section>
+        <section id='gameBoard' v-bind:class='{hideHelper: loading}'>
+            <h1 v-if='players == 1'>You have {{score1}} point(s)</h1>
+            <h1 v-if='players == 2'>Current Player: {{currentPlayer}}</h1>
+            <h1 v-if='players == 2'>Player 1 Score: {{score1}}</h1>
+            <h1 v-if='players == 2'>Player 2 Score: {{score2}}</h1>
+            <div id='catPicker' v-bind:class='{hideCats: hideCats}'>
+                <div id='hardCats'>
+                    <h1>Hard Categories - Worth 3 Points</h1>
+                    <h2>You have {{hardCats.length}} topics remaining</h2>
+                    <ul>
+                        <li v-for="cat in hardCats"><button @click='chooseCategory'>{{cat}}</button></li>
+                    </ul>
+                </div>
+                <div id='easyCats'>
+                    <h1>Easy Categories - Worth 1 Point</h1>
+                    <h2>You have {{easyCats.length}} topics remaining</h2>
+                    <ul>
+                        <li v-for="cat in easyCats"><button @click='chooseCategory'>{{cat}}</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="hardQuestionBox" v-bind:class='{hideHardQuestion: hideHardQuestion}'>
+                <h2>{{hardQuestion.text}}</h2>
+                <input type='text' v-model.trim="hardQuestion.response">
+                <button @click="checkHardQuestion">Check Answer</button>
+            </div>
+            <div id="easyQuestionBox" v-bind:class='{hideEasyQuestion: hideEasyQuestion}'>
+                <h2>{{easyQuestion.question}}</h2>
+                <button @click='checkEasyQuestion'>{{easyQuestion.choices[0]}}</button>
+                <button @click='checkEasyQuestion'>{{easyQuestion.choices[1]}}</button>
+                <button @click='checkEasyQuestion'>{{easyQuestion.choices[2]}}</button>
+                <button @click='checkEasyQuestion'>{{easyQuestion.choices[3]}}</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

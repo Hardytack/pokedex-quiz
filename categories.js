@@ -1,0 +1,3 @@
+const hardCategories = ['Ashs Pokemon', 'Baby Pokemon', 'Champions Pokemon', 'Elite Four Ace', 'Fossil Pokemon', 'Gigantamax Pokemon', 'Gym Leader Ace', 'Happiness Evolution', 'Legendary Pokemon', 'Legendary Trio Pokemon', 'Mega Evolution', 'Pseudo Legendary', 'Regional Form', 'Route 1 Pokemon', 'Starter Pokemon', 'Stone Evolution', 'Trade Evolution', 'Victory Road Pokemon',];
+
+const easyCategories = ['Gen 1', 'Gen 2', 'Gen 3', 'Gen 4', 'Gen 5', 'Gen 6', 'Gen 7', 'Gen 8', 'Bug', 'Dark', 'Dragon', 'Electric', 'Fairy', 'Fighting', 'Fire', 'Flying', 'Ghost', 'Grass', 'Ground', 'Ice', 'Normal', 'Poison', 'Psychic', 'Rock', 'Steel', 'Water', 'Single Type', 'Dual Type'];

@@ -1,0 +1,20 @@
+#catPicker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hideHelper {
+    display: none;
+}
+
+.hideCats {
+    display: none !important;
+}
+
+.hideHardQuestion {
+    display: none !important;
+}
+
+.hideEasyQuestion {
+    display: none !important;
+}

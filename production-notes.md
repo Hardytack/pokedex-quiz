@@ -1,0 +1,53 @@
+# Categories
+-----------
+## All Included
+-----------
+- Gym Leader Ace // Done through Gen 4 - 37 - Updated
+- Champions Pokemon
+- Starter Pokemon
+- Regional Forms
+- Mega Evolves - 9 - Updated
+- Gigantamax - 1
+- Fossil Pokemon - 2 - Updated
+- Route 1 Pokemon
+- ~~Elite Four Ace~~
+- Victory Road // Done through Gen 4 - 48 - Updated
+- Baby Pokemon
+- ~~Psuedo Legend~~
+- Stone Evolution - 8 - Updated
+- Trade Evolution - 6 - Updated
+- Happiness Evolution
+- Ash's Pokemon
+- Legendary Pokemon - 2 - Updated
+- Legendary Trio Pokemon - 1 - Updated
+
+## Misc. Added
+-----------
+- Gen 1 - 37
+- Gen 2 - 8
+- Gen 3 - 23
+- Gen 4 - 12
+- Gen 5 - 2
+- Gen 6 - 1
+- Gen 7 - 1
+- Gen 8 - 2
+- Bug - 2
+- Dark - 2
+- Dragon -  11
+- Electric - 6
+- Fairy - 3
+- Fighting - 11
+- Fire - 3
+- Flying - 9
+- Ghost - 5
+- Grass - 3
+- Ground - 13
+- Ice - 4
+- Normal - 7
+- Poison - 10
+- Psychic - 8
+- Rock - 17
+- Steel - 8
+- Water - 16
+- Dual Type - 41
+- Single Type - 38
