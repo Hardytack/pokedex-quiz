@@ -43,8 +43,10 @@
             </div>
             <div id="hardQuestionBox" v-bind:class='{hideHardQuestion: hideHardQuestion}'>
                 <h2>{{hardQuestion.text}}</h2>
-                <input type='text' v-model.trim="hardQuestion.response">
-                <button @click="checkHardQuestion">Check Answer</button>
+                <form @submit.prevent='checkHardQuestion'>
+                    <input type='text' v-model.trim="hardQuestion.response">
+                    <button>Check Answer</button>
+                </form>
             </div>
             <div id="easyQuestionBox" v-bind:class='{hideEasyQuestion: hideEasyQuestion}'>
                 <h2>{{easyQuestion.question}}</h2>

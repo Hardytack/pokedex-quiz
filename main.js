@@ -23,6 +23,23 @@ function getQuestion(category) {
     }
 }
 
+function getItemCount() {
+    hardCategories.forEach(cat => {
+        let count = pokemon.filter(poke => {
+            return poke.categories.includes(cat)
+        })
+        console.log(`${cat}: ${count.length}`)
+    })
+    easyCategories.forEach(cat => {
+        let count = pokemon.filter(poke => {
+            return poke.categories.includes(cat)
+        })
+        console.log(`${cat}: ${count.length}`)
+    })
+}
+
+getItemCount()
+
 
 function getCategories() {
     return { hard: hardCategories, easy: easyCategories }

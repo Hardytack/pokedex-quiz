@@ -12,7 +12,7 @@
 - Route 1 Pokemon
 - ~~Elite Four Ace~~
 - Victory Road // Done through Gen 4 - 48 - Updated
-- Baby Pokemon
+- ~~Baby Pokemon~~
 - ~~Psuedo Legend~~
 - Stone Evolution - 8 - Updated
 - Trade Evolution - 6 - Updated

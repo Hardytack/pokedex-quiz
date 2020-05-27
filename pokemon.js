@@ -15,9 +15,19 @@ const pokemon = [
         pokedex: { text: 'Apparently, it can detect the innate qualities of leadership. According to legend, whoever it recognizes is destined to become king.' }
     },
     {
+        name: 'aerodactyl',
+        categories: ['Gen 1', 'Rock', 'Flying', 'Dual Type', 'Champions Pokemon', 'Fossil Pokemon', 'Mega Evolution'],
+        pokedex: { text: 'A Pokémon that roamed the skies in the dinosaur era. Its teeth are like saw blades.' }
+    },
+    {
         name: 'alakazam',
-        categories: ['Gen 1', 'Psychic', 'Single Type', 'Gym Leader Ace', 'Trade Evolution'],
+        categories: ['Gen 1', 'Psychic', 'Single Type', 'Gym Leader Ace', 'Trade Evolution', 'Champions Pokemon'],
         pokedex: { text: 'Its highly developed brain is on par with a supercomputer. It can use all forms of psychic abilities.' }
+    },
+    {
+        name: 'alolan exeggutor',
+        categories: ['Gen 7', 'Grass', 'Dragon', 'Dual Type', 'Stone Evolution', 'Regional Form'],
+        pokedex: { text: 'As it grew taller and taller, it outgrew its reliance on psychic powers, while within it awakened the power of the sleeping dragon.' }
     },
     {
         name: 'alolan marowak',
@@ -25,9 +35,29 @@ const pokemon = [
         pokedex: { text: 'When it beats opponents with its bone, the cursed flames spread to them. No amount of water will stop those flames from burning.' }
     },
     {
+        name: 'alolan meowth',
+        categories: ['Gen 7', 'Dark', 'Single Type', 'Regional Form'],
+        pokedex: { text: 'Highly intelligent and prideful, it\'s famously difficult to handle–but that\'s also a reason for its popularity.' }
+    },
+    {
+        name: 'alolan rattata',
+        categories: ['Gen 7', 'Normal', 'Dark', 'Dual Type', 'Regional Form', 'Route 1 Pokemon'],
+        pokedex: { text: 'Night after night, they sneak into people\'s homes seeking food. A massive outbreak of them has become an issue of public concern.' }
+    },
+    {
         name: 'altaria',
         categories: ['Gen 3', 'Flying', 'Dragon', 'Dual Type', 'Gym Leader Ace', 'Mega Evolution'],
         pokedex: { text: 'It flies gracefully through the sky. Its melodic humming makes you feel like you\'re in a dream.' }
+    },
+    {
+        name: 'amaura',
+        categories: ['Gen 6', 'Rock', 'Ice', 'Dual Type', 'Fossil Pokemon'],
+        pokedex: { text: 'This ancient Pokémon was restored from part of its body that had been frozen in ice for over 100 million years.' }
+    },
+    {
+        name: 'anorith',
+        categories: ['Gen 3', 'Rock', 'Bug', 'Dual Type', 'Fossil Pokemon'],
+        pokedex: { text: 'This is one kind of primeval bug Pokémon. With eight wings, it could apparently swim a lot faster than you\'d expect.' }
     },
     {
         name: 'arbok',
@@ -45,9 +75,19 @@ const pokemon = [
         pokedex: { text: 'It usually lives deep in mountains. However, hunger may drive it to eat railroad tracks and cars.' }
     },
     {
+        name: 'azelf',
+        categories: ['Gen 4', 'Psychic', 'Single Type', 'Legendary Pokemon', 'Legendary Trio Pokemon'],
+        pokedex: { text: 'Known as "The Being of Willpower." It sleeps at the bottom of a lake to keep the world in balance.' }
+    },
+    {
         name: 'azumarill',
         categories: ['Gen 2', 'Water', 'Fairy', 'Victory Road Pokemon', 'Dual Type'],
         pokedex: { text: 'The bubble-like pattern on its stomach helps it camouflage itself when it\'s in the water.' }
+    },
+    {
+        name: 'azurill',
+        categories: ['Gen 3', 'Normal', 'Fairy', 'Dual Type', 'Baby Pokemon'],
+        pokedex: { text: 'Its tail, which is packed with nutrition, is very bouncy like a rubber ball. On sunny days they gather at the edge of water and splash about for fun.' }
     },
     {
         name: 'barbacle',
@@ -70,9 +110,29 @@ const pokemon = [
         pokedex: { text: 'It leads a group of Pawniard. It battles to become the boss, but will be driven from the group if it loses.' }
     },
     {
+        name: 'blastoise',
+        categories: ['Gen 1', 'Water', 'Single Type', 'Champions Pokemon', 'Mega Evolution'],
+        pokedex: { text: 'It deliberately makes itself heavy so it can withstand the recoil of the water jets it fires.' }
+    },
+    {
+        name: 'bonsly',
+        categories: ['Gen 4', 'Rock', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'In order to adjust the level of fluids in its body, it exudes water from its eyes. This makes it appear to be crying.' }
+    },
+    {
         name: 'bronzong',
         categories: ['Gen 4', 'Psychic', 'Steel', 'Dual Type', 'Elite Four Ace'],
         pokedex: { text: 'In ages past, this Pokemon was revered as a bringer of rain. It was found buried in the ground.' }
+    },
+    {
+        name: 'budew',
+        categories: ['Gen 4', 'Grass', 'Poison', 'Dual Type', 'Baby Pokemon'],
+        pokedex: { text: 'It lives alongside clear ponds. It scatters pollen that induces harsh sneezing and runny noses.' }
+    },
+    {
+        name: 'bulbasaur',
+        categories: ['Gen 1', 'Grass', 'Poison', 'Dual Type', 'Starter Pokemon', 'Ashs Pokemon'],
+        pokedex: { text: 'It is very agile. Before going to sleep, it extinguishes the flame on its tail to prevent fires.' }
     },
     {
         name: 'caterpie',
@@ -88,6 +148,26 @@ const pokemon = [
         name: 'chansey',
         categories: ['Gen 1', 'Normal', 'Victory Road Pokemon', 'Single Type'],
         pokedex: { text: 'Being few in number and difficult to capture, it is said to bring happiness to the Trainer who catches it.' }
+    },
+    {
+        name: 'charizard',
+        categories: ['Gen 1', 'Fire', 'Flying', 'Dual Type', 'Champions Pokemon', 'Gigantamax Pokemon', 'Mega Evolution', 'Ashs Pokemon'],
+        pokedex: { text: 'It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.' }
+    },
+    {
+        name: 'chimchar',
+        categories: ['Gen 4', 'Fire', 'Single Type', 'Starter Pokemon', 'Ashs Pokemon'],
+        pokedex: { text: 'It is very agile. Before going to sleep, it extinguishes the flame on its tail to prevent fires.' }
+    },
+    {
+        name: 'chingling',
+        categories: ['Gen 4', 'Psychic', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'It lives alongside clear ponds. It scatters pollen that induces harsh sneezing and runny noses.' }
+    },
+    {
+        name: 'cleffa',
+        categories: ['Gen 2', 'Fairy', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'Many appear when the night skies are filled with shooting stars. They disappear with sunrise.' }
     },
     {
         name: 'conkeldurr',
@@ -140,6 +220,16 @@ const pokemon = [
         pokedex: { text: 'It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power.' }
     },
     {
+        name: 'elekid',
+        categories: ['Gen 2', 'Electric', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'It rotates its arms to generate electricity, but it tires easily, so it charges up only a little bit.' }
+    },
+    {
+        name: 'exeggutor',
+        categories: ['Gen 1', 'Grass', 'Psychic', 'Dual Type', 'Champions Pokemon', 'Stone Evolution'],
+        pokedex: { text: 'Its three heads think independently. However, they are friendly and never appear to squabble.' }
+    },
+    {
         name: 'floatzel',
         categories: ['Gen 4', 'Water', 'Victory Road Pokemon', 'Single Type', 'Gym Leader Ace'],
         pokedex: { text: 'It floats using its well-developed flotation sac. It assists in the rescues of drowning people.' }
@@ -160,6 +250,16 @@ const pokemon = [
         pokedex: { text: 'It sheds its skin and gradually grows larger. Its scales can be ground into a powder and used as raw materials for traditional medicine.' }
     },
     {
+        name: 'galarian meowth',
+        categories: ['Gen 8', 'Steel', 'Single Type', 'Regional Form'],
+        pokedex: { text: 'Living with a savage, seafaring people has toughened this Pokemon\'s body so much that parts of it have turned to iron.' }
+    },
+    {
+        name: 'galarian ponyta',
+        categories: ['Gen 8', 'Psychic', 'Single Type', 'Regional Form'],
+        pokedex: { text: 'Its small horn hides a healing power. With a few rubs from this Pokemon\'s horn, any slight wound you have will be healed.' }
+    },
+    {
         name: 'gallade',
         categories: ['Gen 4', 'Psychic', 'Fighting', 'Dual Type', 'Elite Four Ace', 'Stone Evolution', 'Mega Evolution'],
         pokedex: { text: 'When protecting someone, it extends its elbows as if they were swords and fights savagely.' }
@@ -171,7 +271,7 @@ const pokemon = [
     },
     {
         name: 'gengar',
-        categories: ['Gym Leader Ace', 'Gen 1', 'Ghost', 'Poison', 'Dual Type', 'Trade Evolution', 'Mega Evolution', 'Elite Four Ace'],
+        categories: ['Gym Leader Ace', 'Gen 1', 'Ghost', 'Poison', 'Dual Type', 'Trade Evolution', 'Mega Evolution', 'Elite Four Ace', 'Gigantamax Pokemon'],
         pokedex: { text: 'Lurking in the shadowy corners of rooms, it awaits chances to steal its prey\'s life force.' }
     },
     {
@@ -191,7 +291,7 @@ const pokemon = [
     },
     {
         name: 'goodra',
-        categories: ['Gen 6', 'Dragon', 'Single Type', 'Pseudo Legendary'],
+        categories: ['Gen 6', 'Dragon', 'Single Type', 'Pseudo Legendary', 'Ashs Pokemon'],
         pokedex: { text: 'Sometimes it misunderstands instructions and appears dazed or bewildered. Many Trainers don\'t mind, finding this behavior to be adorable.' }
     },
     {
@@ -211,8 +311,13 @@ const pokemon = [
     },
     {
         name: 'gyarados',
-        categories: ['Gen 1', 'Water', 'Flying', 'Victory Road Pokemon', 'Dual Type'],
+        categories: ['Gen 1', 'Water', 'Flying', 'Victory Road Pokemon', 'Dual Type', 'Champions Pokemon'],
         pokedex: { text: 'It fires hyper beams in all directions, burning the surrounding area to ash. There are some regions where it\'s called “the deity of destruction.”' }
+    },
+    {
+        name: 'happiny',
+        categories: ['Gen 4', 'Normal', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'It likes to carry around a small rock. It may wander around others\' feet and cause them to stumble.' }
     },
     {
         name: 'hariyama',
@@ -250,6 +355,11 @@ const pokemon = [
         pokedex: { text: 'This brutal Pokemon travels the skies on its six wings. Anything that moves seems like a foe to it, triggering its attack.' }
     },
     {
+        name: 'igglybuff',
+        categories: ['Gen 2', 'Fairy', 'Normal', 'Dual Type', 'Baby Pokemon'],
+        pokedex: { text: 'Its extremely flexible and elastic body makes it bounce continuously—anytime, anywhere.' }
+    },
+    {
         name: 'impdimp',
         categories: ['Gen 8', 'Fairy', 'Dark', 'Dual Type'],
         pokedex: { text: 'It sneaks into people\'s homes, stealing things and feasting on the negative energy of the frustrated occupants.' }
@@ -258,6 +368,11 @@ const pokemon = [
         name: 'infernape',
         categories: ['Gen 4', 'Fire', 'Fighting', 'Dual Type', 'Elite Four Ace'],
         pokedex: { text: 'It uses unique fighting moves with fire on its hands and feet. It will take on any opponent.' }
+    },
+    {
+        name: 'jigglypuff',
+        categories: ['Gen 1', 'Normal', 'Single Type', 'Route 1 Pokemon', 'Happiness Evolution'],
+        pokedex: { text: 'It hugely inflates its stomach and sings a mysterious melody. If you hear this melody, you\'ll become sleepy right away.' }
     },
     {
         name: 'kadabra',
@@ -281,13 +396,18 @@ const pokemon = [
     },
     {
         name: 'lapras',
-        categories: ['Elite Four Ace', 'Gen 1', 'Water', 'Ice', 'Dual Type'],
+        categories: ['Elite Four Ace', 'Gen 1', 'Water', 'Ice', 'Dual Type', 'Gigantamax Pokemon', 'Ashs Pokemon'],
         pokedex: { text: 'These Pokemon were once near extinction due to poaching. Following protective regulations, there is now an overabundance of them.' }
     },
     {
         name: 'loudred',
         categories: ['Gen 3', 'Normal', 'Victory Road Pokemon', 'Single Type'],
         pokedex: { text: 'When it stomps its feet and bellows, it generates ultrasonic waves that can blow apart a house.' }
+    },
+    {
+        name: 'lucario',
+        categories: ['Gen 4', 'Fighting', 'Steel', 'Dual Type', 'Gym Leader Ace', 'Happiness Evolution', 'Champions Pokemon'],
+        pokedex: { text: 'It can discern the physical and emotional states of people, Pokémon, and other natural things from the shape of their aura waves.' }
     },
     {
         name: 'lunatone',
@@ -306,12 +426,12 @@ const pokemon = [
     },
     {
         name: 'lycanroc',
-        categories: ['Gen 7', 'Rock', 'Elite Four Ace', 'Single Type'],
+        categories: ['Gen 7', 'Rock', 'Elite Four Ace', 'Single Type', 'Ashs Pokemon'],
         pokedex: { text: 'Its quick movements confuse its enemies. Well equipped with claws and fangs, it also uses the sharp rocks in its mane as weapons.' }
     },
     {
         name: 'machamp',
-        categories: ['Gen 1', 'Fighting', 'Elite Four Ace', 'Single Type', 'Trade Evolution'],
+        categories: ['Gen 1', 'Fighting', 'Elite Four Ace', 'Single Type', 'Trade Evolution', 'Gigantamax Pokemon'],
         pokedex: { text: 'With four arms, it can attack and defend simultaneously. It\'s said to have mastered every martial art in the world.' }
     },
     {
@@ -323,6 +443,11 @@ const pokemon = [
         name: 'machop',
         categories: ['Gen 1', 'Fighting', 'Victory Road Pokemon', 'Single Type'],
         pokedex: { text: 'Very powerful in spite of its small size. Its mastery of many types of martial arts makes it very tough.' }
+    },
+    {
+        name: 'magby',
+        categories: ['Gen 2', 'Fire', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'Its magma-like blood circulates throughout its body. Its body\'s heat can top 1,100 degrees F.' }
     },
     {
         name: 'magikarp',
@@ -350,6 +475,16 @@ const pokemon = [
         pokedex: { text: 'It discharges electricity from its mane. It creates a thundercloud overhead to drop lightning bolts.' }
     },
     {
+        name: 'mantyke',
+        categories: ['Gen 4', 'Flying', 'Water', 'Dual Type', 'Baby Pokemon'],
+        pokedex: { text: 'When it swims close to the surface of the ocean, people aboard ships are able to observe the pattern on its back.' }
+    },
+    {
+        name: 'marill',
+        categories: ['Gen 2', 'Water', 'Fairy', 'Dual Type', 'Happiness Evolution'],
+        pokedex: { text: 'The tip of its tail, which contains oil that is lighter than water, lets it swim without drowning.' }
+    },
+    {
         name: 'marowak',
         categories: ['Gen 1', 'Ground', 'Victory Road Pokemon', 'Single Type'],
         pokedex: { text: 'Originally, it was weak and timid. After evolution, its temperament becomes violent, and it begins to wield bones as weapons.' }
@@ -368,6 +503,16 @@ const pokemon = [
         name: 'meditite',
         categories: ['Gen 3', 'Fighting', 'Psychic', 'Victory Road Pokemon', 'Dual Type'],
         pokedex: { text: 'It always trains deep in mountains. It levitates when it heightens its spiritual power through meditation.' }
+    },
+    {
+        name: 'meowth',
+        categories: ['Gen 1', 'Normal', 'Single Type', 'Gigantamax Pokemon'],
+        pokedex: { text: 'Highly intelligent and prideful, it\'s famously difficult to handle–but that\'s also a reason for its popularity.' }
+    },
+    {
+        name: 'mesprit',
+        categories: ['Gen 4', 'Psychic', 'Single Type', 'Legendary Trio Pokemon', 'Legendary Pokemon'],
+        pokedex: { text: 'This Pokémon is said to have endowed the human heart with emotions, such as sorrow and joy.' }
     },
     {
         name: 'metagross',
@@ -390,6 +535,11 @@ const pokemon = [
         pokedex: { text: 'Its milk is delicious and chock-full of nutrients. However, if you drink too much, it could make your stomach hurt, so be careful.' }
     },
     {
+        name: 'mime jr',
+        categories: ['Gen 4', 'Psychic', 'Fairy', 'Dual Type', 'Baby Pokemon'],
+        pokedex: { text: 'It likes places where people gather. It mimics foes to confuse them, then makes its getaway.' }
+    },
+    {
         name: 'mismagius',
         categories: ['Gen 4', 'Ghost', 'Single Type', 'Gym Leader Ace', 'Stone Evolution'],
         pokedex: { text: 'Its cries sound like incantations to torment the foe. It appears where you least expect it.' }
@@ -398,6 +548,16 @@ const pokemon = [
         name: 'moltres',
         categories: ['Gen 1', 'Fire', 'Flying', 'Victory Road Pokemon', 'Dual Type', 'Legendary Pokemon', 'Legendary Trio Pokemon'],
         pokedex: { text: 'One of the legendary bird Pokemon. It is said that its appearance indicates the coming of spring.' }
+    },
+    {
+        name: 'mudkip',
+        categories: ['Gen 3', 'Water', 'Single Type', 'Starter Pokemon'],
+        pokedex: { text: 'Its large tail fin propels it through water with powerful acceleration. It is strong in spite of its size.' }
+    },
+    {
+        name: 'munchlax',
+        categories: ['Gen 4', 'Normal', 'Single Type', 'Baby Pokemon', 'Route 1 Pokemon'],
+        pokedex: { text: 'It wolfs down its weight in food once a day, swallowing food whole with almost no chewing.' }
     },
     {
         name: 'noivern',
@@ -420,14 +580,24 @@ const pokemon = [
         pokedex: { text: 'Once it has whipped up a sandstorm to halt its opponents in their tracks, this terrifying Pokemon snatches away their vitality.' }
     },
     {
+        name: 'pichu',
+        categories: ['Gen 2', 'Electric', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'It is not yet skilled at storing electricity. It may send out a jolt if amused or startled.' }
+    },
+    {
         name: 'pidgeot',
-        categories: ['Gen 1', 'Flying', 'Normal', 'Dual Type', 'Gym Leader Ace', 'Mega Evolution'],
+        categories: ['Gen 1', 'Flying', 'Normal', 'Dual Type', 'Gym Leader Ace', 'Mega Evolution', 'Ashs Pokemon', 'Champions Pokemon'],
         pokedex: { text: 'It spreads its gorgeous wings widely to intimidate enemies. It races through the skies at Mach-2 speed.' }
     },
     {
         name: 'pidgeotto',
-        categories: ['Gen 1', 'Flying', 'Normal', 'Victory Road Pokemon', 'Dual Type', 'Gym Leader Ace'],
+        categories: ['Gen 1', 'Flying', 'Normal', 'Victory Road Pokemon', 'Dual Type', 'Gym Leader Ace', 'Ashs Pokemon'],
         pokedex: { text: 'It has outstanding vision. However high it flies, it is able to distinguish the movements of its prey.' }
+    },
+    {
+        name: 'pikachu',
+        categories: ['Gen 1', 'Electric', 'Single Type', 'Gigantamax Pokemon', 'Happiness Evolution', 'Starter Pokemon', 'Ashs Pokemon'],
+        pokedex: { text: 'Highly intelligent and prideful, it\'s famously difficult to handle–but that\'s also a reason for its popularity.' }
     },
     {
         name: 'piloswine',
@@ -441,7 +611,7 @@ const pokemon = [
     },
     {
         name: 'primeape',
-        categories: ['Gen 1', 'Fighting', 'Victory Road Pokemon', 'Single Type'],
+        categories: ['Gen 1', 'Fighting', 'Victory Road Pokemon', 'Single Type', 'Ashs Pokemon'],
         pokedex: { text: 'It becomes wildly furious if it even senses someone looking at it. It chases anyone that meets its glare.' }
     },
     {
@@ -450,13 +620,28 @@ const pokemon = [
         pokedex: { text: 'When electricity builds up inside its body, it becomes feisty. It also glows in the dark.' }
     },
     {
+        name: 'regice',
+        categories: ['Gen 3', 'Ice', 'Single Type', 'Legendary Pokemon', 'Legendary Trio Pokemon'],
+        pokedex: { text: 'It is said to have slept in a glacier for thousands of years. Its body can\'t be melted, even by magma.' }
+    },
+    {
+        name: 'regirock',
+        categories: ['Gen 3', 'Rock', 'Single Type', 'Legendary Pokemon', 'Legendary Trio Pokemon'],
+        pokedex: { text: 'It is entirely composed of rocks with no sign of a brain or heart. It is a mystery even to modern scientists.' }
+    },
+    {
+        name: 'registeel',
+        categories: ['Gen 3', 'Steel', 'Single Type', 'Legendary Pokemon', 'Legendary Trio Pokemon'],
+        pokedex: { text: 'Tempered by pressure underground over tens of thousands of years, its body cannot be scratched.' }
+    },
+    {
         name: 'remoraid',
         categories: ['Gen 2', 'Water', 'Victory Road Pokemon', 'Single Type'],
         pokedex: { text: 'It has superb accuracy. The water it shoots out can strike even moving prey from more than 300 feet.' }
     },
     {
         name: 'rhydon',
-        categories: ['Gym Leader Ace', 'Gen 1', 'Rock', 'Ground', 'Victory Road Pokemon', 'Dual Type'],
+        categories: ['Gym Leader Ace', 'Gen 1', 'Rock', 'Ground', 'Victory Road Pokemon', 'Dual Type', 'Champions Pokemon'],
         pokedex: { text: 'Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees Fahrenheit.' }
     },
     {
@@ -468,6 +653,11 @@ const pokemon = [
         name: 'rhyperior',
         categories: ['Gen 4', 'Rock', 'Ground', 'Trade Evolution', 'Dual Type', 'Elite Four Ace'],
         pokedex: { text: 'It can launch a rock held in its hand like a missile by tightening then expanding its muscles instantly.' }
+    },
+    {
+        name: 'riolu',
+        categories: ['Gen 4', 'Fighting', 'Single Type', 'Baby Pokemon', 'Ashs Pokemon'],
+        pokedex: { text: 'The aura that emanates from its body intensifies to alert others if it is afraid or sad.' }
     },
     {
         name: 'roserade',
@@ -500,6 +690,21 @@ const pokemon = [
         pokedex: { text: 'The world\'s laziest Pokemon. It moves to another spot when there\'s no food left within its reach.' }
     },
     {
+        name: 'smoochum',
+        categories: ['Gen 2', 'Ice', 'Psychic', 'Dual Type', 'Baby Pokemon'],
+        pokedex: { text: 'It actively runs about, but also falls often. Whenever it falls, it will check its reflection on a lake\'s surface to make sure its face hasn\'t become dirty.' }
+    },
+    {
+        name: 'snivy',
+        categories: ['Gen 5', 'Grass', 'Single Type', 'Starter Pokemon', 'Ashs Pokemon'],
+        pokedex: { text: 'Being exposed to sunlight makes its movements swifter. It uses vines more adeptly than its hands.' }
+    },
+    {
+        name: 'snorlax',
+        categories: ['Gen 1', 'Normal', 'Single Type', 'Gigantamax Pokemon', 'Ashs Pokemon', 'Happiness Evolution'],
+        pokedex: { text: 'This Pokemon\'s stomach is so strong, even eating moldy or rotten food will not affect it.' }
+    },
+    {
         name: 'solrock',
         categories: ['Gen 3', 'Rock', 'Psychic', 'Dual Type', 'Gym Leader Ace'],
         pokedex: { text: 'It absorbs solar energy during the day. Always expressionless, it can sense what its foe is thinking.' }
@@ -516,7 +721,7 @@ const pokemon = [
     },
     {
         name: 'talonflame',
-        categories: ['Gen 6', 'Flying', 'Fire', 'Dual Type', 'Elite Four Ace'],
+        categories: ['Gen 6', 'Flying', 'Fire', 'Dual Type', 'Elite Four Ace', 'Ashs Pokemon'],
         pokedex: { text: 'It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and suck blood.' }
     },
     {
@@ -536,7 +741,7 @@ const pokemon = [
     },
     {
         name: 'torkoal',
-        categories: ['Gen 3', 'Fire', 'Single Type', 'Gym Leader Ace'],
+        categories: ['Gen 3', 'Fire', 'Single Type', 'Gym Leader Ace', 'Ashs Pokemon'],
         pokedex: { text: 'It battles using energy it gets from burning coal. When loosing smoke from its nostrils, it lets off a sound that is similar to a locomotive\'s horn.' }
     },
     {
@@ -545,9 +750,19 @@ const pokemon = [
         pokedex: { text: 'Known for forming harmonious couples, this Pokemon is brought to wedding ceremonies as a good luck charm.' }
     },
     {
+        name: 'toxel',
+        categories: ['Gen 8', 'Poison', 'Electric', 'Dual Type', 'Baby Pokemon'],
+        pokedex: { text: 'It manipulates the chemical makeup of its poison to produce electricity. The voltage is weak, but it can cause a tingling paralysis.' }
+    },
+    {
         name: 'tyranitar',
         categories: ['Gen 2', 'Rock', 'Dark', 'Dual Type', 'Champions Pokemon', 'Pseudo Legendary', 'Mega Evolution'],
         pokedex: { text: 'This Pokemon is a mobile disaster, leaving mountains crumbled and houses destroyed in its wake.' }
+    },
+    {
+        name: 'tyrogue',
+        categories: ['Gen 2', 'Fighting', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'It is always bursting with energy. To make itself stronger, it keeps on fighting even if it loses.' }
     },
     {
         name: 'ursaring',
@@ -555,9 +770,19 @@ const pokemon = [
         pokedex: { text: 'Although it is a good climber, it prefers to snap trees with its forelegs and eat fallen Berries.' }
     },
     {
+        name: 'uxie',
+        categories: ['Gen 4', 'Psychic', 'Single Type', 'Legendary Trio Pokemon', 'Legendary Pokemon'],
+        pokedex: { text: 'It is said that its emergence gave humans the intelligence to improve their quality of life.' }
+    },
+    {
         name: 'vivillon',
         categories: ['Gym Leader Ace', 'Gen 6', 'Flying', 'Bug', 'Dual Type'],
         pokedex: { text: 'The wings are covered with dustlike scales. Every time it flaps its wings, it looses highly toxic dust.' }
+    },
+    {
+        name: 'venusaur',
+        categories: ['Gen 1', 'Grass', 'Poison', 'Single Type', 'Champions Pokemon', 'Mega Evolution'],
+        pokedex: { text: 'By spreading the broad petals of its flower and catching the sun\'s rays, it fills its body with power.' }
     },
     {
         name: 'venomoth',
@@ -593,6 +818,11 @@ const pokemon = [
         name: 'whismur',
         categories: ['Gen 3', 'Normal', 'Victory Road Pokemon', 'Single Type'],
         pokedex: { text: 'It usually murmurs, but starts crying loudly if it senses danger. It stops when its ear covers are shut.' }
+    },
+    {
+        name: 'wynaut',
+        categories: ['Gen 3', 'Psychic', 'Single Type', 'Baby Pokemon'],
+        pokedex: { text: 'It tends to move in a pack. Individuals squash against one another to toughen their spirits.' }
     },
     {
         name: 'xatu',
