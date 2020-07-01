@@ -2,52 +2,30 @@
 -----------
 ## All Included
 -----------
-- Gym Leader Ace // Done through Gen 4 - 37 - Updated
-- Champions Pokemon
-- Starter Pokemon
-- Regional Forms
-- Mega Evolves - 9 - Updated
-- Gigantamax - 1
-- Fossil Pokemon - 2 - Updated
-- Route 1 Pokemon
-- ~~Elite Four Ace~~
-- Victory Road // Done through Gen 4 - 48 - Updated
-- ~~Baby Pokemon~~
-- ~~Psuedo Legend~~
-- Stone Evolution - 8 - Updated
-- Trade Evolution - 6 - Updated
-- Happiness Evolution
-- Ash's Pokemon
-- Legendary Pokemon - 2 - Updated
-- Legendary Trio Pokemon - 1 - Updated
+- 1) Ash's Pokemon
+- 2) Brock and Misty
+- 3) Champions Pokemon - Done through Cynthia
+- 4) Evil Leaders - Done through Cyrus
+- 5) Forest Dwellers
+- 7) Genderless
+- 8) Gym Leader Ace // Done through Gen 4 + Gen 8
+- 9) Legendary Pokemon
+- 10) Regional Forms
+- 11) Shadow Pokemon
+- 12) Smash Ball
+- 13) Starter Pokemon - Gen 3 Done
+- 14) Victory Road // Done through Gen 4
 
-## Misc. Added
------------
-- Gen 1 - 37
-- Gen 2 - 8
-- Gen 3 - 23
-- Gen 4 - 12
-- Gen 5 - 2
-- Gen 6 - 1
-- Gen 7 - 1
-- Gen 8 - 2
-- Bug - 2
-- Dark - 2
-- Dragon -  11
-- Electric - 6
-- Fairy - 3
-- Fighting - 11
-- Fire - 3
-- Flying - 9
-- Ghost - 5
-- Grass - 3
-- Ground - 13
-- Ice - 4
-- Normal - 7
-- Poison - 10
-- Psychic - 8
-- Rock - 17
-- Steel - 8
-- Water - 16
-- Dual Type - 41
-- Single Type - 38
+- ~~Baby Pokemon~~
+- ~~Boys Only~~
+- ~~Elite Four Ace~~
+- ~~Fossil Pokemon~~
+- ~~Gigantamax~~
+- ~~Girls Only~~
+- ~~Happiness Evolution~~
+- ~~Legendary Trio~~
+- ~~Mega Evolution~~
+- ~~Psuedo Legend~~
+- ~~Route 1 Pokemon~~
+- ~~Stone Evolution~~
+- ~~Trade Evolution~~

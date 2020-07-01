@@ -1,59 +1,50 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Pokedex Quiz</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="./categories.js" defer></script>
     <script src="./pokemon.js" defer></script>
     <script src="./main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='./style.css'>
 </head>
 
 <body>
     <div id='app'>
         <section id='loadScreen' v-bind:class='{hideHelper: !loading}'>
-            <form @submit.prevent=' setGame'>
-                <label>How many Players?</label>
-                <label>1</label>
-                <input type='radio' name='playerCount' value='1'>
-                <label>2</label>
-                <input type='radio' name='playerCount' value='2'>
-                <button>Start Game</button>
-            </form>
+            <h1>How many Players?</h1>
+            <button @click="testClick(1)">1 Player</button>
+            <button @click="testClick(2)">2 Player</button>
         </section>
         <section id='gameBoard' v-bind:class='{hideHelper: loading}'>
-            <h1 v-if='players == 1'>You have {{score1}} point(s)</h1>
-            <h1 v-if='players == 2'>Current Player: {{currentPlayer}}</h1>
-            <h1 v-if='players == 2'>Player 1 Score: {{score1}}</h1>
-            <h1 v-if='players == 2'>Player 2 Score: {{score2}}</h1>
-            <div id='catPicker' v-bind:class='{hideCats: hideCats}'>
-                <div id='hardCats'>
-                    <h1>Hard Categories - Worth 3 Points</h1>
-                    <h2>You have {{hardCats.length}} topics remaining</h2>
-                    <ul>
-                        <li v-for="cat in hardCats"><button @click='chooseCategory'>{{cat}}</button></li>
-                    </ul>
-                </div>
-                <div id='easyCats'>
-                    <h1>Easy Categories - Worth 1 Point</h1>
-                    <h2>You have {{easyCats.length}} topics remaining</h2>
-                    <ul>
-                        <li v-for="cat in easyCats"><button @click='chooseCategory'>{{cat}}</button></li>
+            <div id="scoreboard">
+                <h1 v-if='players == 2' class='topScoreboardText'>Current Player: {{currentPlayer}}</h1>
+                <h1 v-if='players == 1' class='topScoreboardText'>You have {{score1}} point(s)</h1>
+                <h1 v-if='players == 2' class='twoPlayerScore'>Player 1 Score: {{score1}}</h1>
+                <h1 v-if='players == 2' class='twoPlayerScore'>Player 2 Score: {{score2}}</h1>
+            </div>
+            <div id='catPicker' v-bind:class='{hideHelper: hideCats}'>
+                <div id='hardCats' class='catBox'>
+                    <h1>Categories</h1>
+                    <h3>There are {{cats.length}} topics remaining</h3>
+                    <ul class='hardList'>
+                        <li v-for="cat in cats"><button class='hardTopic' @click='chooseCategory'>{{cat}}</button>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div id="hardQuestionBox" v-bind:class='{hideHardQuestion: hideHardQuestion}'>
-                <h2>{{hardQuestion.text}}</h2>
-                <form @submit.prevent='checkHardQuestion'>
-                    <input type='text' v-model.trim="hardQuestion.response">
+            <div id="hardQuestionBox" v-bind:class='{hideHelper: hideQuestion}'>
+                <h1>{{currentCat}}</h1>
+                <h2>{{question.text}}</h2>
+                <form @submit.prevent='checkQuestion'>
+                    <input list="pokeListOptions" name="pokeList" id="pokeList" v-model.trim="question.response" />
+                    <datalist id='pokeListOptions'>
+                        <option v-for="poke in pokemonList" v-bind:value='poke'></option>
+                    </datalist>
                     <button>Check Answer</button>
                 </form>
-            </div>
-            <div id="easyQuestionBox" v-bind:class='{hideEasyQuestion: hideEasyQuestion}'>
-                <h2>{{easyQuestion.question}}</h2>
-                <button @click='checkEasyQuestion'>{{easyQuestion.choices[0]}}</button>
-                <button @click='checkEasyQuestion'>{{easyQuestion.choices[1]}}</button>
-                <button @click='checkEasyQuestion'>{{easyQuestion.choices[2]}}</button>
-                <button @click='checkEasyQuestion'>{{easyQuestion.choices[3]}}</button>
             </div>
         </section>
     </div>

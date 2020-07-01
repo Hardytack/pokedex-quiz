@@ -1,20 +1,284 @@
-#catPicker {
+/*-----Misc Styles-----*/
+* {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    box-sizing: border-box;
+}
+
+.hideHelper {
+    display: none !important;
+}
+
+/*---Loading Screen-----*/
+#loadScreen {
+    display: grid;
+}
+
+#loadScreen h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+#loadScreen button {
+    font-size: 3em;
+    width: 75%;
+    padding: 20px;
+    justify-self: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+/*-----Scoreboard-----*/
+#scoreboard {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.hideHelper {
-    display: none;
+.topScoreboardText {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    grid-column: 1 / 3;
 }
 
-.hideCats {
-    display: none !important;
+.twoPlayerScore {
+    font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
-.hideHardQuestion {
-    display: none !important;
+
+
+/*-----Category Picker-----*/
+#catPicker {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
 }
 
-.hideEasyQuestion {
-    display: none !important;
+#catPicker ul {
+    display: grid;
+    list-style-position: inside;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    grid-gap: 10px;
 }
+
+#catPicker li button {
+    width: 100%;
+    font-size: 1.8em;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    color: #222;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+
+.catBox {
+    margin-bottom: 15px;
+}
+
+.catBox h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+.catBox h2 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+}
+
+.catBox h3 {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+}
+
+.hardTopic {
+    background: #ffa27a;
+}
+
+.hardTopic:hover {
+    background: #eb9571;
+}
+
+.easyTopic {
+    background: #79edfc;
+}
+
+.easyTopic:hover {
+    background: #72dfed;
+}
+
+@media only screen and (min-width: 700px) {
+    #catPicker {
+        grid-template-columns: 1fr;
+    }
+
+    #catPicker li button {
+        width: 90%;
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 0;
+        font-weight: bold;
+        border: none;
+    }
+
+    #catPicker ul {
+        /* grid-template-columns: 1fr 1fr; */
+        grid-gap: 10px;
+    }
+
+    .hardList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .hardList {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .easyList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #catPicker li button {
+        width: 100%;
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 0;
+        font-weight: bold;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #hardCats {
+        margin-right: 20px;
+    }
+
+    #easyCats {
+        justify-self: start;
+        margin-left: 20px;
+    }
+}
+
+/*-----Hard Question-----*/
+#hardQuestionBox {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#hardQuestionBox h1 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 0;
+}
+
+#hardQuestionBox form input {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#hardQuestionBox form button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+    #hardQuestionBox h2 {
+        font-size: 2em;
+        line-height: 1.3em;
+        font-weight: 400;
+    }
+
+    #hardQuestionBox form input {
+        font-size: 1.5em;
+    }
+
+    #hardQuestionBox form button {
+        font-size: 1.5em;
+        padding: 5px;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #hardQuestionBox {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #hardQuestionBox h2 {
+        text-align: center;
+    }
+}
+
+/*-----Easy Question-----*/
+#easyQuestionBox {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#buttonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buttonContainer button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    /* border: none; */
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+    #easyQuestionBox h2 {
+        font-size: 2em;
+        line-height: 1.3em;
+        font-weight: 400;
+    }
+    
+    #buttonContainer button {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #easyQuestionBox {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #easyQuestionBox h2 {
+        text-align: center;
+    }
+}
+

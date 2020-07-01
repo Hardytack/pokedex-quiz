@@ -1,48 +1,31 @@
+
+// Fetches a question from the chosen category
 function getQuestion(category) {
-    if (hardCategories.includes(category)) {
-        let selected = pokemon.filter(poke => {
-            return poke.categories.includes(category)
-        });
-        let pokeNumber = Math.floor(Math.random() * selected.length);
-        let pickedPokemon = selected[pokeNumber]
-        return { type: 'hard', answer: pickedPokemon };
-    } else {
-        let selected = pokemon.filter(poke => {
-            return poke.categories.includes(category)
-        });
-        let pokeNumber1 = Math.floor(Math.random() * selected.length);
-        let pickedPokemon = selected[pokeNumber1]
-        let others = [pickedPokemon];
-        while (others.length < 4) {
-            let pokeNumber2 = Math.floor(Math.random() * selected.length);
-            if (!others.includes(selected[pokeNumber2])) {
-                others.push(selected[pokeNumber2])
-            }
-        }
-        return { type: 'easy', answer: pickedPokemon, others };
-    }
+    let selected = pokemon.filter(poke => {
+        return poke.categories.includes(category)
+    });
+    let pokeNumber = Math.floor(Math.random() * selected.length);
+    let pickedPokemon = selected[pokeNumber]
+    return { type: 'hard', answer: pickedPokemon };
 }
 
+// Returns the amount of options for each category
 function getItemCount() {
-    hardCategories.forEach(cat => {
+    categories.forEach(cat => {
         let count = pokemon.filter(poke => {
             return poke.categories.includes(cat)
         })
         console.log(`${cat}: ${count.length}`)
     })
-    easyCategories.forEach(cat => {
-        let count = pokemon.filter(poke => {
-            return poke.categories.includes(cat)
-        })
-        console.log(`${cat}: ${count.length}`)
-    })
+    console.log(`Total: ${pokemon.length}`);
 }
 
 getItemCount()
 
 
+
 function getCategories() {
-    return { hard: hardCategories, easy: easyCategories }
+    return categories
 }
 
 
@@ -54,40 +37,34 @@ new Vue({
         score1: 0,
         score2: 0,
         currentPlayer: 1,
-        hardCats: [],
-        easyCats: [],
+        cats: [],
         hideCats: false,
-        hideHardQuestion: true,
-        hideEasyQuestion: true,
-        hardQuestion: {
+        hideQuestion: true,
+        questionSteal: false,
+        currentCat: 'Loading',
+        question: {
             text: '',
             answer: '',
             response: '',
             check: ''
         },
-        easyQuestion: {
-            choices: [],
-            answer: null,
-            question: null
-        }
+        usedPokemon: [],
+        pokemonList: ['Abomasnow', 'Absol', 'Accelgor', 'Aegislash', 'Aerodactyl', 'Aggron', 'Alakazam', 'Alcremie', 'Alolan Dugtrio', 'Alolan Exeggutor', 'Alolan Golem', 'Alolan Marowak', 'Alolan Meowth', 'Alolan Ninetales', 'Alolan Persian', 'Alolan Raichu', 'Alolan Rattata', 'Alolan Sandslash', 'Altaria', 'Amaura', 'Ampharos', 'Anorith', 'Appletun', 'Arbok', 'Arcanine', 'Archen', 'Arctovish', 'Arctozolt', 'Armaldo']
     },
     methods: {
+        testClick(val) {
+            this.players = val;
+            this.loading = false;
+        },
         setGame(e) {
             this.players = e.target.playerCount.value
             this.loading = false;
         },
-        updateScore(type) {
+        updateScore() {
             if (this.currentPlayer == 1) {
-                type == 'hard' ? this.score1 += 3 : this.score1 += 1
+                this.score1 += 1
             } else {
-                type == 'hard' ? this.score2 += 3 : this.score2 += 1
-            }
-        },
-        checkPlayer() {
-            if (this.players == 1) {
-                return true;
-            } else {
-                return false;
+                this.score2 += 1
             }
         },
         changePlayer() {
@@ -111,73 +88,58 @@ new Vue({
             return newarr
         },
         chooseCategory(e) {
-            const data = getQuestion(e.target.innerHTML);
-            if (data.type == 'hard') {
-                this.hardQuestion.text = data.answer.pokedex.text;
-                this.hardQuestion.answer = data.answer.name;
-                this.toggleBoxes('hard');
-                this.hardCats = this.hardCats.filter(cat => {
-                    return cat != e.target.innerHTML
-                })
-            } else {
-                this.easyQuestion.choices = this.randomizeArray(data.others);
-                this.easyQuestion.answer = data.answer.name;
-                this.easyQuestion.question = data.answer.pokedex.text
-                this.toggleBoxes('easy');
-                this.easyCats = this.easyCats.filter(cat => {
-                    return cat != e.target.innerHTML
-                })
+            let data = getQuestion(e.target.innerHTML);
+            while (this.usedPokemon.includes(data.answer.name)) {
+                console.log('rerolling');
+                data = getQuestion(e.target.innerHTML);
             }
+            this.currentCat = e.target.innerHTML;
+            this.usedPokemon.push(data.answer.name);
+            this.question.text = data.answer.pokedex.text;
+            this.question.answer = data.answer.name;
+            this.toggleBoxes('hard');
+            this.cats = this.cats.filter(cat => {
+                return cat != e.target.innerHTML
+            })
         },
-        checkHardQuestion() {
-            if (this.hardQuestion.answer == this.hardQuestion.response.toLowerCase()) {
-                alert("That's correct! +3 Points!")
-                this.updateScore('hard');
+        checkQuestion() {
+            if (this.question.answer == this.question.response.toLowerCase()) {
+                alert("That's correct! +1 Point!")
+                this.updateScore();
                 this.toggleBoxes();
-                this.changePlayer();
-                this.hardQuestion.response = '';
+                if (this.questionSteal == false) {
+                    this.changePlayer();
+                }
+                this.questionSteal = false;
+                this.question.response = '';
             } else {
-                alert(`That's not right, the correct answer is ${this.hardQuestion.answer}`);
-                this.changePlayer();
-                this.toggleBoxes();
-                this.hardQuestion.response = '';
-            }
-        },
-        checkEasyQuestion(e) {
-            if (e.target.innerHTML == this.easyQuestion.answer) {
-                alert('Thats correct! +1 Point!')
-                this.updateScore('easy');
-                this.changePlayer();
-                this.toggleBoxes();
-            } else {
-                alert(`That's not right, the correct answer is ${this.easyQuestion.answer}`);
-                this.changePlayer();
-                this.toggleBoxes();
+                if (this.players == 1 || this.questionSteal == true) {
+                    alert(`That's not right, the correct answer is ${this.question.answer}`);
+                    this.toggleBoxes();
+                    this.questionSteal = false;
+                    this.question.response = '';
+                } else {
+                    alert(`That's incorrect. Your opponent now has a chance to steal!`);
+                    this.changePlayer();
+                    this.questionSteal = true;
+                    this.question.response = '';
+                }
             }
         },
         toggleBoxes(type) {
             if (type == 'hard') {
                 this.hideCats = true;
-                this.hideEasyQuestion = true;
-                this.hideHardQuestion = false;
-            } else if (type == 'easy') {
-                this.hideCats = true;
-                this.hideEasyQuestion = false;
-                this.hideHardQuestion = true;
+                this.hideQuestion = false;
             } else {
                 this.hideCats = false;
-                this.hideEasyQuestion = true;
-                this.hideHardQuestion = true;
+                this.hideQuestion = true;
             }
         }
     },
     created() {
         const categs = getCategories();
-        categs.hard.forEach(categ => {
-            this.hardCats.push(categ)
-        })
-        categs.easy.forEach(categ => {
-            this.easyCats.push(categ)
+        categs.forEach(categ => {
+            this.cats.push(categ)
         })
     }
 })
