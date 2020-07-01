@@ -40,9 +40,9 @@
                 <h2>{{question.text}}</h2>
                 <form @submit.prevent='checkQuestion'>
                     <input list="pokeListOptions" name="pokeList" id="pokeList" v-model.trim="question.response" />
-                    <datalist id='pokeListOptions'>
+                    <!-- <datalist id='pokeListOptions'>
                         <option v-for="poke in pokemonList" v-bind:value='poke'></option>
-                    </datalist>
+                    </datalist> -->
                     <button>Check Answer</button>
                 </form>
             </div>
