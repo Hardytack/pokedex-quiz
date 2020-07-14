@@ -20,8 +20,6 @@ function getItemCount() {
     console.log(`Total: ${pokemon.length}`);
 }
 
-getItemCount()
-
 
 
 function getCategories() {
@@ -48,8 +46,7 @@ new Vue({
             response: '',
             check: ''
         },
-        usedPokemon: [],
-        pokemonList: ['Abomasnow', 'Absol', 'Accelgor', 'Aegislash', 'Aerodactyl', 'Aggron', 'Alakazam', 'Alcremie', 'Alolan Dugtrio', 'Alolan Exeggutor', 'Alolan Golem', 'Alolan Marowak', 'Alolan Meowth', 'Alolan Ninetales', 'Alolan Persian', 'Alolan Raichu', 'Alolan Rattata', 'Alolan Sandslash', 'Altaria', 'Amaura', 'Ampharos', 'Anorith', 'Appletun', 'Arbok', 'Arcanine', 'Archen', 'Arctovish', 'Arctozolt', 'Armaldo', 'Aromatisse', 'Aron', 'Articuno', 'Audino', 'Azelf', 'Azumarill', 'Banette', 'Barbacle', 'Barboach', 'Bastiodon', 'Bayleef', 'Beartic', 'Beedrill', 'Bellossom', 'Bellsprout', 'Bidoof', 'Bisharp', 'Blastoise', 'Blaziken', 'Blipbug', 'Blissey', 'Bonsly', 'Bounsweet', 'Braviary', 'Bronzong', 'Budew', 'Bulbasaur', 'Buneary', 'Bunnelby', 'Butterfree']
+        usedPokemon: []
     },
     methods: {
         testClick(val) {

@@ -102,7 +102,7 @@ const pokemon = [
     {
         name: 'alolan sandslash',
         categories: ['Regional Form', 'Stone Evolution'],
-        pokedex: { text: 'This Pokémon\'s steel spikes are sheathed in ice. Stabs from these spikes cause deep wounds and severe frostbite as well.' }
+        pokedex: { text: 'This Pokemon\'s steel spikes are sheathed in ice. Stabs from these spikes cause deep wounds and severe frostbite as well.' }
     },
     {
         name: 'alolan sandslash',
@@ -212,7 +212,7 @@ const pokemon = [
     {
         name: 'banette',
         categories: ['Mega Evolution'],
-        pokedex: { text: 'Strong feelings of hatred turned a puppet into a Pokémon. If it opens its mouth, its cursed energy escapes.' }
+        pokedex: { text: 'Strong feelings of hatred turned a puppet into a Pokemon. If it opens its mouth, its cursed energy escapes.' }
     },
     {
         name: 'barbacle',
@@ -287,7 +287,7 @@ const pokemon = [
     {
         name: 'blipbug',
         categories: ['Route 1'],
-        pokedex: { text: 'A constant collector of information, this Pokémon is very smart. Very strong is what it isn\'t.' }
+        pokedex: { text: 'A constant collector of information, this Pokemon is very smart. Very strong is what it isn\'t.' }
     },
     {
         name: 'blissey',
@@ -302,7 +302,7 @@ const pokemon = [
     {
         name: 'bounsweet',
         categories: ['Girls Only'],
-        pokedex: { text: 'Because of its sweet, delicious aroma, bird Pokémon are always after it, but it\'s not intelligent enough to care' }
+        pokedex: { text: 'Because of its sweet, delicious aroma, bird Pokemon are always after it, but it\'s not intelligent enough to care' }
     },
     {
         name: 'braviary',
@@ -622,7 +622,7 @@ const pokemon = [
     {
         name: 'entei',
         categories: ['Legendary Pokemon', 'Legendary Trio'],
-        pokedex: { text: 'A Pokémon that races across the land. It is said that one is born every time a new volcano appears.' }
+        pokedex: { text: 'A Pokemon that races across the land. It is said that one is born every time a new volcano appears.' }
     },
     {
         name: 'escavalier',
@@ -667,7 +667,7 @@ const pokemon = [
     {
         name: 'fletchling',
         categories: ['Route 1'],
-        pokedex: { text: 'These friendly Pokémon send signals to one another with beautiful chirps and tail-feather movements.' }
+        pokedex: { text: 'These friendly Pokemon send signals to one another with beautiful chirps and tail-feather movements.' }
     },
     {
         name: 'floatzel',
@@ -877,7 +877,7 @@ const pokemon = [
     {
         name: 'grubbin',
         categories: ['Route 1'],
-        pokedex: { text: 'They often gather near places frequented by electric Pokémon in order to avoid being attacked by bird Pokémon.' }
+        pokedex: { text: 'They often gather near places frequented by electric Pokemon in order to avoid being attacked by bird Pokemon.' }
     },
     {
         name: 'gyarados',
@@ -917,7 +917,7 @@ const pokemon = [
     {
         name: 'hattrem',
         categories: ['Girls Only'],
-        pokedex: { text: 'No matter who you are, if you bring strong emotions near this Pokémon, it will silence you violently.' }
+        pokedex: { text: 'No matter who you are, if you bring strong emotions near this Pokemon, it will silence you violently.' }
     },
     {
         name: 'haxorus',
@@ -927,7 +927,7 @@ const pokemon = [
     {
         name: 'haxorus',
         categories: ['Gym Leader Ace'],
-        pokedex: { text: 'Their sturdy tusks will stay sharp even if used to cut steel beams. These Pokémon are covered in hard armor.' }
+        pokedex: { text: 'Their sturdy tusks will stay sharp even if used to cut steel beams. These Pokemon are covered in hard armor.' }
     },
     {
         name: 'heracross',
@@ -1172,17 +1172,17 @@ const pokemon = [
     {
         name: 'lilligant',
         categories: ['Stone Evolution', 'Girls Only'],
-        pokedex: { text: 'Even veteran Trainers face a challenge in getting its beautiful flower to bloom. This Pokémon is popular with celebrities.' }
+        pokedex: { text: 'Even veteran Trainers face a challenge in getting its beautiful flower to bloom. This Pokemon is popular with celebrities.' }
     },
     {
         name: 'lilligant',
         categories: ['Stone Evolution', 'Girls Only'],
-        pokedex: { text: 'It\'s well liked by other Pokémon because of its beauty. The flower on its head needs constant care, or it will soon wither and rot.' }
+        pokedex: { text: 'It\'s well liked by other Pokemon because of its beauty. The flower on its head needs constant care, or it will soon wither and rot.' }
     },
     {
         name: 'lillipup',
         categories: ['Gym Leader Ace', 'Route 1'],
-        pokedex: { text: 'Though it is a very brave Pokémon, it\'s also smart enough to check its foe\'s strength and avoid battle.' }
+        pokedex: { text: 'Though it is a very brave Pokemon, it\'s also smart enough to check its foe\'s strength and avoid battle.' }
     },
     {
         name: 'lillipup',
@@ -1287,7 +1287,7 @@ const pokemon = [
     {
         name: 'mandibuzz',
         categories: ['Girls Only'],
-        pokedex: { text: 'Watching from the sky, they swoop to strike weakened Pokémon on the ground. They decorate themselves with bones.' }
+        pokedex: { text: 'Watching from the sky, they swoop to strike weakened Pokemon on the ground. They decorate themselves with bones.' }
     },
     {
         name: 'manectric',
@@ -1362,12 +1362,12 @@ const pokemon = [
     {
         name: 'mew',
         categories: ['Legendary Pokemon', 'Smash Ball'],
-        pokedex: { text: 'Its DNA is said to contain the genetic codes of all Pokémon, so it can use all kinds of techniques.' }
+        pokedex: { text: 'Its DNA is said to contain the genetic codes of all Pokemon, so it can use all kinds of techniques.' }
     },
     {
         name: 'mewtwo',
         categories: ['Legendary Pokemon', 'Mega Evolution'],
-        pokedex: { text: 'A vicious psychic Pokémon created by genetic engineering. Its cold, glowing eyes strike fear into its enemy.' }
+        pokedex: { text: 'A vicious psychic Pokemon created by genetic engineering. Its cold, glowing eyes strike fear into its enemy.' }
     },
     {
         name: 'mightyena',
@@ -1457,7 +1457,7 @@ const pokemon = [
     {
         name: 'nickit',
         categories: ['Route 1'],
-        pokedex: { text: 'Cunning and cautious, this Pokémon survives by stealing food from others. It erases its tracks with swipes of its tail as it makes off with its plunder.' }
+        pokedex: { text: 'Cunning and cautious, this Pokemon survives by stealing food from others. It erases its tracks with swipes of its tail as it makes off with its plunder.' }
     },
     {
         name: 'nidoking',
@@ -1542,7 +1542,7 @@ const pokemon = [
     {
         name: 'oddish',
         categories: ['Route 1'],
-        pokedex: { text: 'This Pokémon grows by absorbing moonlight. During the daytime, it buries itself in the ground, leaving only its leaves exposed to avoid detection by its enemies.' }
+        pokedex: { text: 'This Pokemon grows by absorbing moonlight. During the daytime, it buries itself in the ground, leaving only its leaves exposed to avoid detection by its enemies.' }
     },
     {
         name: 'omanyte',
@@ -1577,7 +1577,7 @@ const pokemon = [
     {
         name: 'pansage',
         categories: ['Gym Leader Ace'],
-        pokedex: { text: 'It shares the leaf on its head with weary-looking Pokémon. These leaves are known to relieve stress.' }
+        pokedex: { text: 'It shares the leaf on its head with weary-looking Pokemon. These leaves are known to relieve stress.' }
     },
     {
         name: 'pansear',
@@ -1707,7 +1707,7 @@ const pokemon = [
     {
         name: 'raikou',
         categories: ['Legendary Pokemon', 'Legendary Trio'],
-        pokedex: { text: 'A Pokémon that races across the land while barking a cry that sounds like crashing thunder.' }
+        pokedex: { text: 'A Pokemon that races across the land while barking a cry that sounds like crashing thunder.' }
     },
     {
         name: 'rattata',
@@ -1777,7 +1777,7 @@ const pokemon = [
     {
         name: 'rookidee',
         categories: ['Route 1'],
-        pokedex: { text: 'It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle—even a defeat increases its strength a bit.' }
+        pokedex: { text: 'It will bravely challenge any opponent, no matter how powerful. This Pokemon benefits from every battle—even a defeat increases its strength a bit.' }
     },
     {
         name: 'roselia',
@@ -1847,7 +1847,7 @@ const pokemon = [
     {
         name: 'scatterbug',
         categories: ['Route 1'],
-        pokedex: { text: 'When under attack from bird Pokémon, it spews a poisonous black powder that causes paralysis on contact.' }
+        pokedex: { text: 'When under attack from bird Pokemon, it spews a poisonous black powder that causes paralysis on contact.' }
     },
     {
         name: 'sceptile',
@@ -1867,7 +1867,7 @@ const pokemon = [
     {
         name: 'sentret',
         categories: ['Route 1'],
-        pokedex: { text: 'A very cautious Pokémon, it raises itself up using its tail to get a better view of its surroundings.' }
+        pokedex: { text: 'A very cautious Pokemon, it raises itself up using its tail to get a better view of its surroundings.' }
     },
     {
         name: 'sentret',
@@ -1892,7 +1892,7 @@ const pokemon = [
     {
         name: 'shiftry',
         categories: ['Stone Evolution'],
-        pokedex: { text: 'A Pokémon that was feared as a forest guardian. It can read the foe\'s mind and take preemptive action.' }
+        pokedex: { text: 'A Pokemon that was feared as a forest guardian. It can read the foe\'s mind and take preemptive action.' }
     },
     {
         name: 'shiftry',
@@ -1942,7 +1942,7 @@ const pokemon = [
     {
         name: 'skwovet',
         categories: ['Route 1'],
-        pokedex: { text: 'Found throughout the Galar region, this Pokémon becomes uneasy if its cheeks are ever completely empty of berries.' }
+        pokedex: { text: 'Found throughout the Galar region, this Pokemon becomes uneasy if its cheeks are ever completely empty of berries.' }
     },
     {
         name: 'slaking',
@@ -2027,7 +2027,7 @@ const pokemon = [
     {
         name: 'steenee',
         categories: ['Girls Only'],
-        pokedex: { text: 'This Pokémon is always bouncing around energetically. Other Pokémon are attracted by its lively appearance and pleasant aroma.' }
+        pokedex: { text: 'This Pokemon is always bouncing around energetically. Other Pokemon are attracted by its lively appearance and pleasant aroma.' }
     },
     {
         name: 'suicune',
@@ -2192,7 +2192,7 @@ const pokemon = [
     {
         name: 'tsareena',
         categories: ['Girls Only'],
-        pokedex: { text: 'A Pokémon known for the beauty of its well-shaped legs, it sometimes appears as a mascot in advertisements for beauty salons.' }
+        pokedex: { text: 'A Pokemon known for the beauty of its well-shaped legs, it sometimes appears as a mascot in advertisements for beauty salons.' }
     },
     {
         name: 'tyranitar',
@@ -2382,7 +2382,7 @@ const pokemon = [
     {
         name: 'wooloo',
         categories: ['Route 1'],
-        pokedex: { text: 'Its curly fleece is such an effective cushion that this Pokémon could fall off a cliff and stand right back up at the bottom, unharmed.' }
+        pokedex: { text: 'Its curly fleece is such an effective cushion that this Pokemon could fall off a cliff and stand right back up at the bottom, unharmed.' }
     },
     {
         name: 'wormadam',
@@ -2417,7 +2417,7 @@ const pokemon = [
     {
         name: 'yveltal',
         categories: ['Legendary Pokemon', 'Legendary Trio'],
-        pokedex: { text: 'When this legendary Pokémon\'s wings and tail feathers spread wide and glow red, it absorbs the life force of living creatures.' }
+        pokedex: { text: 'When this legendary Pokemon\'s wings and tail feathers spread wide and glow red, it absorbs the life force of living creatures.' }
     },
     {
         name: 'zacian',
@@ -2432,12 +2432,12 @@ const pokemon = [
     {
         name: 'zebstrika',
         categories: ['Gym Leader Ace'],
-        pokedex: { text: 'This ill-tempered Pokémon is dangerous because when it\'s angry, it shoots lightning from its mane in all directions.' }
+        pokedex: { text: 'This ill-tempered Pokemon is dangerous because when it\'s angry, it shoots lightning from its mane in all directions.' }
     },
     {
         name: 'zebstrika',
         categories: ['Gym Leader Ace'],
-        pokedex: { text: 'When this ill-tempered Pokémon runs wild, it shoots lightning from its mane in all directions.' }
+        pokedex: { text: 'When this ill-tempered Pokemon runs wild, it shoots lightning from its mane in all directions.' }
     },
     {
         name: 'zigzagoon',

@@ -39,10 +39,7 @@
                 <h1>{{currentCat}}</h1>
                 <h2>{{question.text}}</h2>
                 <form @submit.prevent='checkQuestion'>
-                    <input list="pokeListOptions" name="pokeList" id="pokeList" v-model.trim="question.response" />
-                    <!-- <datalist id='pokeListOptions'>
-                        <option v-for="poke in pokemonList" v-bind:value='poke'></option>
-                    </datalist> -->
+                    <input type='text' name="pokeList" id="pokeList" v-model.trim="question.response" />
                     <button>Check Answer</button>
                 </form>
             </div>
